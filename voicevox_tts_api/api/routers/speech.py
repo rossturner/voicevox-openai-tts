@@ -89,7 +89,7 @@ async def create_speech(request: SpeechRequest):
         # レスポンスを返す
         return Response(
             content=synthesis_response.content,
-            media_type="audio/mpeg"
+            media_type="audio/wav"
         )
 
     except requests.RequestException as e:
